@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ChartData, ChartType } from 'chart.js';
 
 @Component({
   selector: 'app-grafica1',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class Grafica1Component implements OnInit {
-
+  labels: string[] = [ 'Download Sales 1', 'In-Store Sales 1', 'Mail-Order Sales 1' ];
+  data: number[]= [ 10, 15, 40 ];
   constructor() { }
 
   ngOnInit(): void {
